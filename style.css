@@ -1,50 +1,18 @@
-/* FILEPATH: /c:/Users/ftr19/MILESTONEPRJS-DSU/MileStonePRJ1/style.css */
-
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#canvas1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
 }
-
-/* Set up the game container */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #000;
+.controls {
+  position: absolute;
+  z-index: 10;
+  top: 100px;
+    left: 50%;
+    transform: translate(-50%);  
 }
-
-/* Style the game canvas */
-canvas {
-  border: 1px solid #fff;
-}
-
-/* Add some game-specific styles */
-.game-title {
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.game-instructions {
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.game-score {
-  color: #fff;
-  font-size: 16px;
-  text-align: center;
-}
-
-.game-over {
-  color: #fff;
-  font-size: 32px;
-  text-align: center;
-  margin-top: 50px;
+.controls, select, option {
+    font-size: 25px;
 }
