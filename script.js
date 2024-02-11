@@ -11,6 +11,7 @@ const CANVAS_HEIGHT = canvas.height = 600;
 
 const playerImage = new Image();
 playerImage.src = 'shadow_dog.png';
+
 const spriteWidth = 575;
 const spriteHeight = 523;
 
@@ -75,7 +76,7 @@ console.log(spriteAnimations);
 
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-    let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations[playerState].loc.lenght;
+    let position = Math.floor(gameFrame/staggerFrames) % spriteAnimations[playerState].loc.length;
    let frameX = spriteWidth * position;
     let frameY = spriteAnimations[playerState].loc[position].y;
 
