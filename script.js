@@ -71,7 +71,7 @@ animationStates.forEach((state, index) => {
     }
     spriteAnimations[state.name] = frames;
 });
-console.log(animationStates);
+console.log(spriteAnimations);
 
 function animate(){
     ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
@@ -79,8 +79,8 @@ function animate(){
    let frameX = spriteWidth * position;
     let frameY = spriteAnimations[playerState].loc[position].y;
 
-    ctx.drawImage(playerImage, frameX, frameY * spriteHeight, spriteWidth, spriteHeight, 0, 0,  spriteWidth, spriteHeight);
-   
+    ctx.drawImage(playerImage, frameX, frameY,spriteWidth, spriteHeight, 0, 0,
+          spriteWidth, spriteHeight);
          gameFrame++;
     requestAnimationFrame(animate);
 };
