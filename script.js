@@ -54,7 +54,7 @@ const animationStates = [
     },
     {
         name: 'ko',
-        frames: 7,
+        frames: 12,
     },
     {
         name: 'getHit',
